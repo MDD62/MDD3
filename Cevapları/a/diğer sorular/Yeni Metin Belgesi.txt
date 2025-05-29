@@ -1,0 +1,31 @@
+Soru 2:
+
+a) CREATE TABLE ogrenciler (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    ad TEXT,
+    soyad TEXT,
+    not_ortalamasi REAL,
+    sinif TEXT );
+
+b)  INSERT INTO ogrenciler (ad, soyad, not_ortalamasi, sinif) VALUES ('Ahmet', 'Yılmaz', 90, '12A');
+INSERT INTO ogrenciler (ad, soyad, not_ortalamasi, sinif) VALUES ('Mehmet', 'Kaya', 45, '11B');
+INSERT INTO ogrenciler (ad, soyad, not_ortalamasi, sinif) VALUES ('Elif', 'Demir', 75, '10C');
+
+c) DELETE FROM ogrenciler WHERE not_ortalamasi < 50;
+
+d)  UPDATE ogrenciler SET sinif = 'Basarili' WHERE not_ortalamasi > 85;
+
+e)  ALTER TABLE ogrenciler ADD COLUMN adres TEXT;
+
+f)  SELECT * FROM ogrenciler;
+	
+
+Soru 3:
+JSON (JavaScript Object Notation), verilerin anahtar-değer çiftleri şeklinde saklandığı, hafif ve okunabilir bir veri formatıdır	{
+  "ad": "Ali",
+  "soyad": "Yılmaz",
+  "yas": 18
+} Uzak Veritabanı ile Veri Alışverişi:
+Mobil uygulama, uzak bir sunucuda bulunan veritabanıyla HTTP istekleri (GET, POST, PUT, DELETE) aracılığıyla iletişim kurar.
+Sunucudan gelen veriler genellikle JSON formatındadır. Bu veriler mobil uygulama tarafından alınarak nesnelere dönüştürülür ve ekranda gösterilir.
+Aynı şekilde, mobil uygulamadan sunucuya veri gönderilirken de JSON formatı kullanılır.

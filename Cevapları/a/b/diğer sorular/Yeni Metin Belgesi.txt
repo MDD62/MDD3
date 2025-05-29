@@ -1,0 +1,27 @@
+soru2 : 
+a)	CREATE TABLE urunler (
+	    urun_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  	  urun_adi TEXT,
+  	  fiyat REAL,
+  	  stok INTEGER );
+
+b)	INSERT INTO urunler (urun_adi, fiyat, stok) VALUES ('Laptop', 1000, 5);
+INSERT INTO urunler (urun_adi, fiyat, stok) VALUES ('Klavye', 150, 0);
+INSERT INTO urunler (urun_adi, fiyat, stok) VALUES ('Mouse', 90, 10);
+
+c)	DELETE FROM urunler WHERE stok = 0;
+
+d)	UPDATE urunler SET fiyat = fiyat * 1.15 WHERE fiyat < 100;
+
+f)	SELECT * FROM urunler;
+
+g)	DROP TABLE urunler;
+
+
+Soru 3:
+INTEGER =>Tam sayıları saklamak için kullanılır.  Örnek: yas INTEGER → yas = 18
+
+REAL => Ondalıklı sayılar için kullanılır.  Örnek: fiyat REAL → fiyat = 12.75
+
+TEXT => Metin/veri dizileri için kullanılır. Örnek: isim TEXT → isim = 'Ayşe'
+NULL => Herhangi bir veri içermeyen (boş) alanları temsil eder. Örnek: adres TEXT olabilir ama bazı kayıtlar için NULL kalabilir.
